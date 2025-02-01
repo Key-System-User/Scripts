@@ -212,4 +212,4 @@ print("If you are not banned, Do Nothing, It Will Open Again")
 
 wait(3)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/Ban-Script/main/Script.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/ban", true))()
