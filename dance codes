@@ -1,0 +1,41 @@
+local StarterGui = game: GetService("StarterGui")
+
+StarterGui: SetCore("SendNotification", {
+    Title = "Script By 917Dream",
+    Text = "My Discord Name : _offlineplayer_",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+    Duration = 2.5,
+})
+print("Script By 917Dream")
+print("My Discord Name : _offlineplayer_")
+
+local StarterGui = game: GetService("StarterGui")
+
+StarterGui: SetCore("SendNotification", {
+    Title = "Dance Script Loading...",
+    Text = "Wait a Bit",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+    Duration = 2.5,
+})
+print("Dance Script Loading...")
+print("Wait a Bit")
+
+wait(5)
+
+local StarterGui = game: GetService("StarterGui")
+
+StarterGui: SetCore("SendNotification", {
+    Title = "Loaded",
+    Text = "Dance Codes Loaded , Press F9 For See Dance Codes",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+    Duration = 4,
+})
+print("/e dance1 = Dance 1")
+print("/e dance2 = Dance 2")
+print("/e dance3 = Dance 3")
+print("/e laugh = Laugh")
+print("/e cheer = Cheer")
+print("/e point = Point")
+print("/e wave = Wave")
+print("Loaded!")
+print("Enjoy!")
