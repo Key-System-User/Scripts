@@ -1,0 +1,473 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_ | Script Made By _offline Player | Script Made By _offline Player | Script Made By _offline Player | Script Made By _offline Player 
+             | Script By 917Dream | Script By 917Dream | Script By 917Dream | Script By 917Dream | Script By 917Dream | Script By 917Dream | Script By 917Dream 
+]]--
+
+local a = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
+local b = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))();
+local c = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))();
+local d = a:CreateWindow({Title="Offline HUB",SubTitle="☮",TabWidth=160,Size=UDim2.fromOffset(580, 460),Acrylic=true,Theme="Dark",MinimizeKey=Enum.KeyCode.LeftControl});
+local e = {Scripts=d:AddTab({Title="♎ Scripts",Icon=""}),Copies=d:AddTab({Title="♎ Can Be Copied",Icon=""}),Unc=d:AddTab({Title="♈ UNC Test",Icon=""}),Exploits=d:AddTab({Title="♍ Supported Exploits",Icon=""}),Credits=d:AddTab({Title="♌ Credits",Icon=""}),Version=d:AddTab({Title="♐ Version & Updates",Icon=""}),Main=d:AddTab({Title="♒ Databases",Icon=""}),Settings=d:AddTab({Title="♉ Settings",Icon=""})};
+local f = a.Options;
+do
+	a:Notify({Title="Offline HUB Loaded",Content="You Can Execute Scripts Now!",SubContent="Enjoy :)",Duration=5});
+	e.Scripts:AddButton({Title="Blox Fruits Script",Description="Key : xk06nst6bgj8a",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiSupremacy/Loader.xyz/main/Loader.Blurk%20ST%20%3A%20G"))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="ESP And Aimbot Script",Description="Key not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/esp", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="A Dusty Trip Script",Description="Key Not Found ( Disconnected )",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/artemy133563/Utilities/main/ADustyTrip", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Reviz Admin Script ( Patched )",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/Admin/main/Admin", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="R15 Animations Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="R15 Animations Script 2 ( Patched )",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/OfflinePlayer01/Free-Animations-Script/main/AnimationHack.txt", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="R15 to R16",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGetAsync("https://scriptblox.com/raw/Universal-Script-from-R15-to-R6-9639", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Beluse Hub (+30 Games) ",Description="Key : You Can't Skip Key System :(",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/beliveri12/BeluseHub/main/Loader.lua", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Ctrl + Click to Teleport ",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/tp"))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Dex Exploler Arrangement ",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Infinite Yeild FE",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Lucky Blocks Script ( Patched )",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/Lucky-Blocks/main/Script", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="R3TH PRIV HUB ",Description="Patched :(",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/MM2-Script/main/Script.lua", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Murder Mystery 2 Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/MURDER%20MYSTERY%202", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Murder Mystery 2 Script - 2",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/Pwt3snWX", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Murder Mystery 2 Script - 3",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/TEOG.lua", true))()", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Murder Mystery 2 AutoFarm Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring"))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Troll GUI ",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/yeet", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Legends Speed Similator ( Disconnected )",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/OP-Legends-Speed-Similator-Script/main/OP%20Script", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+e.Scripts:AddButton({Title="Solara Test Script ( Patched )",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/Solara-Main/main/Script", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="R6 Dance Script ",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/dance%20codes", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="No Animations Script R6 ( Patched )",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/No-Animations-Script-R6/main/No_Animations_Script_R6.lua", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="No Animations Script R15( Patched )",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/No-Animations-Script-R15/main/Script.lua", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Corner Clip Fix Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/corner", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Eazvy Anim Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Eazvy/public-scripts/main/Universal_Animations_Emotes.lua"))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Walk On Walls",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/walk", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Infinite Jump Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/inf", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="OfflineTools Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/tool", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="OP Swords Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/op", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Energize R15 And R6",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/energize", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Good GUI Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/good", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Ban Yourself Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/ban", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Spam GG Script ( For Old Chat )",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/TwP92xC1", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="BackFlip FE Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/ki0t9urg", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Break Chat ( For Old Chat )",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/fmMAXv0G", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Move Accessory",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/BgLeHGHe", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Nut Hub For Solara ( Discontinued )",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Qrto1/working/main/pc", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Add INF YIELD Plugins ( Discontinued )",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua"))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Can Collide Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/9BtgziLP", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Heal Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/HLPhJdr1", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Pls Donate Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/VncAUTTm", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Copies:AddButton({Title="HWID",Description="Copies Your HWID",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			setclipboard(gethwid);
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+    e.Copies:AddButton({Title="GENV",Description="Copies Your GENV",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			setclipboard(getgenv);
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+    e.Copies:AddButton({Title="FENV",Description="Copies Your FENV",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			setclipboard(getfenv);
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+    e.Copies:AddButton({Title="INSTANCES",Description="Copies Your INSTANCES",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			setclipboard(getinstances);
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Unc:AddButton({Title="UNC Test",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/74MudfDk", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Credits:AddParagraph({Title="Don't Forget Follow Me!",Content="(ツ)"});
+	e.Credits:AddParagraph({Title="Discord : offp001",Content="@1081565798918787142"});
+	e.Credits:AddParagraph({Title="Github : OfflinePlayer01",Content="Link : https://github.com/OfflinePlayer01/"});
+	e.Credits:AddParagraph({Title="Roblox : OfflinePlayer01",Content="Link : https://www.roblox.com/users/7099174419/profile"});
+	e.Credits:AddButton({Title="Credits GUI",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/4QbadvFL", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Exploits:AddParagraph({Title="Solara",Content="Download : https://wearedevs.net/d/Solara"});
+	e.Exploits:AddParagraph({Title="Celery",Content="Download : https://celery.zip/"});
+	e.Exploits:AddParagraph({Title="Incognito",Content="Download : https://discord.gg/incognito"});
+	e.Exploits:AddParagraph({Title="Delta",Content="Download : https://delta-executor.com/"});
+	e.Exploits:AddParagraph({Title="Arceus X",Content="Download : https://arceusx.net/"});
+	e.Exploits:AddParagraph({Title="Ro-Exec | Krampus",Content="Download : https://roexec.com/"});
+	e.Exploits:AddParagraph({Title="Evon",Content="Download : https://evon.cc/"});
+	e.Exploits:AddParagraph({Title="Trigon Evo",Content="Download : https://trigonevo.com/"});
+	e.Exploits:AddParagraph({Title="Vega X",Content="Download : https://www.vegax.gg/"});
+	e.Exploits:AddParagraph({Title="Hydrogen",Content="Download : https://hydrogenexec.com/"});
+	e.Exploits:AddParagraph({Title="Script-Ware",Content="Download : https://script-ware.com/"});
+    e.Exploits:AddParagraph({Title="Zorara",Content="Download : https://wearedevs.net/d/Zorara"});
+	e.Exploits:AddParagraph({Title="Note!",Content=" ( The Scripts I Specified May Not Work on Some Executors )"});
+	e.Main:AddParagraph({Title="Paragraph",Content="This is a Paragraph"});
+	e.Main:AddButton({Title="Button",Description="This is a Button",Callback=function()
+		d:Dialog({Title="Are You Sure?",Content="Click A Button",Buttons={{Title="Yes",Callback=function()
+			print("Clicked Yes");
+		end},{Title="No",Callback=function()
+			print("Clicked No");
+		end}}});
+	end});
+	e.Version:AddParagraph({Title="Create",Content="Alpha ( Version 0.1 )"});
+	e.Version:AddParagraph({Title="Added :",Content="Created GUI & Script Tab"});
+	e.Version:AddParagraph({Title="Added :",Content="Added Credits Tab"});
+	e.Version:AddParagraph({Title="Update 2 ",Content="Beta ( Version 0.2 )"});
+	e.Version:AddParagraph({Title="News :",Content="Updated Credits Tab ( Changed Name To Credits & Settings )"});
+	e.Version:AddParagraph({Title="Update 3 ",Content="Version ( Version 1.0 )"});
+	e.Version:AddParagraph({Title="News :",Content="Added Versions Tab"});
+	e.Version:AddParagraph({Title="Update 4 ",Content="Version ( Version 1.5 )"});
+	e.Version:AddParagraph({Title="News :",Content="Added New Scripts"});
+	e.Version:AddParagraph({Title="Update 5 ",Content="Version ( Version 1.7 )"});
+	e.Version:AddParagraph({Title="News :",Content="Updated Credits & Settings Tab ( Added Prefix )"});
+	e.Version:AddParagraph({Title="Update 6",Content="Version ( 2.0 )"});
+	e.Version:AddParagraph({Title="News :",Content="Bug Fixes ( Settings )"});
+	e.Version:AddParagraph({Title="News :",Content="Added New Tab ( Databases )"});
+	e.Version:AddParagraph({Title="Update 7",Content="Version ( 2.2 )"});
+	e.Version:AddParagraph({Title="News :",Content="Added New Scripts ( Corner Clip Fix And R6 Dances )"});
+	e.Version:AddParagraph({Title="Update 8",Content="Version ( 2.3 )"});
+	e.Version:AddParagraph({Title="News :",Content="Added New Scripts ( No Animations Script R15 & Old Animations R6 )"});
+	e.Version:AddParagraph({Title="Update 9",Content="Version ( 2.5 )"});
+	e.Version:AddParagraph({Title="News :",Content="Added New Scripts ( Walk On Walls & Infinite Jump Script & OfflineTools Script & OP Swords Script )"});
+	e.Version:AddParagraph({Title="Update 10",Content="Added New Scripts ( Energize R15 And R6 Script )"});
+    e.Version:AddParagraph({Title="Update 11",Content="Added New Scripts ( 5 New Scripts )"});
+	local b = e.Version:AddParagraph({Title="Update 12",Content="Added New Scripts ( Patched Script, ALL Bugs Fixed (917Dream ACC, _offlineplayer_ ACC Banned ) )"});
+	local b = e.Main:AddToggle("MyToggle", {Title="Toggle",Default=false});
+	b:OnChanged(function()
+		print("Toggle changed:", f.MyToggle.Value);
+	end);
+	f.MyToggle:SetValue(false);
+	local b = e.Main:AddSlider("Slider", {Title="Slider",Description="This is a Slider",Default=2,Min=0,Max=5,Rounding=1,Callback=function(a)
+		print("Changed :", a);
+	end});
+	b:OnChanged(function(a)
+		print("Changed :", a);
+	end);
+	b:SetValue(3);
+	local b = e.Main:AddDropdown("Dropdown", {Title="Dropdown",Values={"One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen"},Multi=false,Default=1});
+	b:SetValue("four");
+	b:OnChanged(function(a)
+		print("Dropdown changed:", a);
+	end);
+	local b = e.Main:AddDropdown("MultiDropdown", {Title="MultiDropdown",Description="This is a MultiDropdown",Values={"One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen"},Multi=true,Default={"One","Two"}});
+	b:SetValue({Three=true,Five=true,Seven=false});
+	b:OnChanged(function(a)
+		local b = {};
+		for a, c in next, a do
+			table.insert(b, a);
+		end
+		print("Changed :", table.concat(b, ", "));
+	end);
+	local b = e.Main:AddColorpicker("Colorpicker", {Title="Colorpicker",Default=Color3.fromRGB(96, 205, 255)});
+	b:OnChanged(function()
+		print("Color Changed :", b.Value);
+	end);
+	b:SetValueRGB(Color3.fromRGB(0, 255, 140));
+	local b = e.Main:AddColorpicker("TransparencyColorpicker", {Title="TColorpicker",Description="This is a TColorpicker",Transparency=0,Default=Color3.fromRGB(96, 205, 255)});
+	b:OnChanged(function()
+		print("Changed :", b.Value, "Changed :", b.Transparency);
+	end);
+	local b = e.Main:AddKeybind("Keybind", {Title="Keybind",Mode="Toggle",Default="LeftControl",Callback=function(a)
+		print("Keybind Changed :", a);
+	end,ChangedCallback=function(a)
+		print("Keybind Changed :", a);
+	end});
+	b:OnClick(function()
+		print("Keybind :", b:GetState());
+	end);
+	b:OnChanged(function()
+		print("Keybind Changed", b.Value);
+	end);
+	task.spawn(function()
+		while true do
+			wait(1);
+			local b = b:GetState();
+			if b then
+				print("Keybind State");
+			end
+			if a.Unloaded then
+				break;
+			end
+		end
+	end);
+	b:SetValue("MB2", "Toggle");
+	local a = e.Main:AddInput("Input", {Title="Input",Default="Text",Placeholder="Placeholder",Numeric=false,Finished=false,Callback=function(a)
+		print("Input Changed :", a);
+	end});
+	a:OnChanged(function()
+		print("Input Changed :", a.Value);
+	end);
+end
+b:SetLibrary(a);
+c:SetLibrary(a);
+b:IgnoreThemeSettings();
+b:SetIgnoreIndexes({});
+c:SetFolder("FluentScriptHub");
+b:SetFolder("FluentScriptHub/specific-game");
+c:BuildInterfaceSection(e.Settings);
+b:BuildConfigSection(e.Settings);
+d:SelectTab(1);
+a:Notify({Title="This Script Made By OfflinePlayer_01",Content="My Discord : offp001",Duration=5});
+b:LoadAutoloadConfig();
