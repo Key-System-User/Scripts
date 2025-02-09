@@ -5229,10 +5229,10 @@ local function COBWDKS_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 
 	-- Customize
 	local usernameColors = {
-		["OfflinePlayer_001"] = Color3.fromHex("##0030ff"),
+		["OfflinePlayer_001"] = Color3.fromHex("#f48fff"),
+		["2077Gojo"] = Color3.fromHex("#f48fff"),
+		["917Dream"] = Color3.fromHex("#f48fff"),
 		["OfflinePlayer_01"] = Color3.fromHex("#0030ff"),
-		["917Dream"] = Color3.fromHex("#0030ff"),
-		["207Gojo"] = Color3.fromHex("#0030ff"),
 	}
 
 	local specialUsernameColors = {
