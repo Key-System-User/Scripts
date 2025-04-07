@@ -192,6 +192,20 @@ e.Scripts:AddButton({Title="Solara Test Script ( Patched )",Description="Key Not
 			print("Cancelled");
 		end}}});
 	end});
+	e.Scripts:AddButton({Title="Evuuz Fling Fix R6 Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/evuuz", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Evuuz Fling Fix R15 Script",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Key-System-User/Scripts/refs/heads/main/evuuz%20r15", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
 	e.Scripts:AddButton({Title="Eazvy Anim Script",Description="Key Not Found",Callback=function()
 		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Eazvy/public-scripts/main/Universal_Animations_Emotes.lua"))();
