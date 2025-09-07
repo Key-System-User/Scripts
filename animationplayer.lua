@@ -1,7 +1,7 @@
 local Players = game:GetService("Players")
 local RS = game:GetService("ReplicatedStorage")
-
 local player = Players.LocalPlayer
+
 local accessoriesFolder = RS:FindFirstChild(player.Name .. "_SavedAccessories")
 if not accessoriesFolder then
 	accessoriesFolder = Instance.new("Folder")
@@ -13,6 +13,8 @@ local toggle = false
 
 local function toggleAccessories()
 	local char = player.Character or player.CharacterAdded:Wait()
+	if not char then return end
+
 	if toggle == false then
 		for _, v in ipairs(char:GetChildren()) do
 			if v:IsA("Accessory") then
@@ -29,8 +31,8 @@ local function toggleAccessories()
 end
 
 player.CharacterAdded:Connect(function(char)
+	task.wait(1)
 	if toggle then
-		task.wait(1)
 		for _, v in ipairs(char:GetChildren()) do
 			if v:IsA("Accessory") then
 				v.Parent = accessoriesFolder
@@ -85,34 +87,42 @@ idBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 idBox.ClearTextOnFocus = false
 idBox.Parent = frame
 
-accButton.MouseButton1Click:Connect(function()
-	toggleAccessories()
-end)
+accButton.MouseButton1Click:Connect(toggleAccessories)
 
-local currentAnim
+local function createOrUpdateAnimation(id)
+	local anim = RS:FindFirstChild("Animation")
+	if not anim then
+		anim = Instance.new("Animation")
+		anim.Name = "Animation"
+		anim.Parent = RS
+	end
+	anim.AnimationId = "rbxassetid://" .. id
+	return anim
+end
+
+local currentTrack
 local function stopAnim()
-	if currentAnim then
-		currentAnim:Stop()
-		currentAnim = nil
+	if currentTrack then
+		currentTrack:Stop()
+		currentTrack = nil
 	end
 end
 
+stopButton.MouseButton1Click:Connect(stopAnim)
+
 playButton.MouseButton1Click:Connect(function()
-	local id = tonumber(idBox.Text)
-	if id then
+	local id = idBox.Text
+	if id ~= "" then
 		local char = player.Character or player.CharacterAdded:Wait()
 		local humanoid = char:WaitForChild("Humanoid")
-		local anim = Instance.new("Animation")
-		anim.AnimationId = "rbxassetid://" .. id
-		currentAnim = humanoid:LoadAnimation(anim)
-		currentAnim:Play()
+		local animator = humanoid:FindFirstChildOfClass("Animator") or Instance.new("Animator", humanoid)
+		
+		local anim = createOrUpdateAnimation(id)
+		stopAnim()
+		currentTrack = animator:LoadAnimation(anim)
+		currentTrack.Priority = Enum.AnimationPriority.Action
+		currentTrack:Play()
 	end
 end)
 
-stopButton.MouseButton1Click:Connect(function()
-	stopAnim()
-end)
-
-player.CharacterAdded:Connect(function(char)
-	stopAnim()
-end)
+player.CharacterAdded:Connect(stopAnim)
