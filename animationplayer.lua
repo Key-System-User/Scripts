@@ -1,44 +1,44 @@
 local Players = game:GetService("Players")
 local RS = game:GetService("ReplicatedStorage")
+local UIS = game:GetService("UserInputService")
 local player = Players.LocalPlayer
 
 local accessoriesFolder = RS:FindFirstChild(player.Name .. "_SavedAccessories")
 if not accessoriesFolder then
-	accessoriesFolder = Instance.new("Folder")
-	accessoriesFolder.Name = player.Name .. "_SavedAccessories"
-	accessoriesFolder.Parent = RS
+    accessoriesFolder = Instance.new("Folder")
+    accessoriesFolder.Name = player.Name .. "_SavedAccessories"
+    accessoriesFolder.Parent = RS
 end
 
 local toggle = false
 
 local function toggleAccessories()
-	local char = player.Character or player.CharacterAdded:Wait()
-	if not char then return end
-
-	if toggle == false then
-		for _, v in ipairs(char:GetChildren()) do
-			if v:IsA("Accessory") then
-				v.Parent = accessoriesFolder
-			end
-		end
-		toggle = true
-	else
-		for _, v in ipairs(accessoriesFolder:GetChildren()) do
-			v.Parent = char
-		end
-		toggle = false
-	end
+    local char = player.Character or player.CharacterAdded:Wait()
+    if not char then return end
+    if toggle == false then
+        for _, v in ipairs(char:GetChildren()) do
+            if v:IsA("Accessory") then
+                v.Parent = accessoriesFolder
+            end
+        end
+        toggle = true
+    else
+        for _, v in ipairs(accessoriesFolder:GetChildren()) do
+            v.Parent = char
+        end
+        toggle = false
+    end
 end
 
 player.CharacterAdded:Connect(function(char)
-	task.wait(1)
-	if toggle then
-		for _, v in ipairs(char:GetChildren()) do
-			if v:IsA("Accessory") then
-				v.Parent = accessoriesFolder
-			end
-		end
-	end
+    task.wait(1)
+    if toggle then
+        for _, v in ipairs(char:GetChildren()) do
+            if v:IsA("Accessory") then
+                v.Parent = accessoriesFolder
+            end
+        end
+    end
 end)
 
 local screenGui = Instance.new("ScreenGui")
@@ -90,39 +90,47 @@ idBox.Parent = frame
 accButton.MouseButton1Click:Connect(toggleAccessories)
 
 local function createOrUpdateAnimation(id)
-	local anim = RS:FindFirstChild("Animation")
-	if not anim then
-		anim = Instance.new("Animation")
-		anim.Name = "Animation"
-		anim.Parent = RS
-	end
-	anim.AnimationId = "rbxassetid://" .. id
-	return anim
+    local anim = RS:FindFirstChild("Animation")
+    if not anim then
+        anim = Instance.new("Animation")
+        anim.Name = "Animation"
+        anim.Parent = RS
+    end
+    anim.AnimationId = "rbxassetid://" .. id
+    return anim
 end
 
 local currentTrack
 local function stopAnim()
-	if currentTrack then
-		currentTrack:Stop()
-		currentTrack = nil
-	end
+    if currentTrack then
+        currentTrack:Stop()
+        currentTrack = nil
+    end
 end
 
 stopButton.MouseButton1Click:Connect(stopAnim)
 
 playButton.MouseButton1Click:Connect(function()
-	local id = idBox.Text
-	if id ~= "" then
-		local char = player.Character or player.CharacterAdded:Wait()
-		local humanoid = char:WaitForChild("Humanoid")
-		local animator = humanoid:FindFirstChildOfClass("Animator") or Instance.new("Animator", humanoid)
-		
-		local anim = createOrUpdateAnimation(id)
-		stopAnim()
-		currentTrack = animator:LoadAnimation(anim)
-		currentTrack.Priority = Enum.AnimationPriority.Action
-		currentTrack:Play()
-	end
+    local id = idBox.Text
+    if id ~= "" then
+        local char = player.Character or player.CharacterAdded:Wait()
+        local humanoid = char:WaitForChild("Humanoid")
+        local animator = humanoid:FindFirstChildOfClass("Animator") or Instance.new("Animator", humanoid)
+        local anim = createOrUpdateAnimation(id)
+        stopAnim()
+        currentTrack = animator:LoadAnimation(anim)
+        currentTrack.Priority = Enum.AnimationPriority.Action
+        currentTrack:Play()
+    end
 end)
 
 player.CharacterAdded:Connect(stopAnim)
+
+UIS.InputBegan:Connect(function(input, gpe)
+    if gpe then return end
+    if input.KeyCode == Enum.KeyCode.L then
+        frame.Visible = not frame.Visible
+    elseif input.KeyCode == Enum.KeyCode.K then
+        toggleAccessories()
+    end
+end)
