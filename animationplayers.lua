@@ -128,7 +128,7 @@ player.CharacterAdded:Connect(stopAnim)
 
 UIS.InputBegan:Connect(function(input, gpe)
     if gpe then return end
-    if input.KeyCode == Enum.KeyCode.L then
+    if input.KeyCode == Enum.KeyCode.PageDown then
         frame.Visible = not frame.Visible
     elseif input.KeyCode == Enum.KeyCode.K then
         toggleAccessories()
